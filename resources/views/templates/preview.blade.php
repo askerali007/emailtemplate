@@ -24,7 +24,7 @@
             <div class="box box-info box-solid">
               <div class="box-header with-border">
                 <h3 class="box-title" data-toggle="tooltip" data-placement="top" data-original-title=""> 
-		@include(uploads.templates.two.index))
+		
                 </h3>
               </div>
               <!-- /.box-header -->
