@@ -15,7 +15,7 @@
                 <div class=" col-md-2 col-xs-2 col-sm-6">
                     <a target="_blank" href="#" class="btn btn-info"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;Open in new window</a></div> 
                 <div class=" col-md-2 col-xs-2 col-sm-6">
-                    <a href="javascript:history.back()" class="pull-right">&laquo;&nbsp;Back to list</a></div>
+                    <a href="{{URL::asset('templates')}}" class="pull-right">&laquo;&nbsp;Back to list</a></div>
             </div>
         </div>
           <!-- /.box-header -->
@@ -24,14 +24,13 @@
             <div class="box box-info box-solid">
               <div class="box-header with-border">
                 <h3 class="box-title" data-toggle="tooltip" data-placement="top" data-original-title=""> 
-		
+		Template title
                 </h3>
               </div>
               <!-- /.box-header -->
               <div class="box-body text-center">
               <!-- Template Body Start here -->
-                Template part
-                <div class="clearfix"></div>
+                <iframe src="{{URL::asset('uploads/templates/'.$template->id.'/index.html')}}" width="100%"  id="iframe_preview" frameborder="0" onload="this.style.height = parseInt(80)+this.contentWindow.document.body.scrollHeight + 'px';"></iframe> 
               </div>
               
             </div>
