@@ -45,7 +45,10 @@ Route::get('/templates', [
         'as' => 'templates.index',
 	'uses' => 'TemplatesController@index',
 ]);
-
+Route::get('/templates/create', [
+        'as' => 'templates.create',
+	'uses' => 'TemplatesController@create',
+]);
 Route::get('/templates/preview/{id}', [
         'as' => 'templates.preview',
 	'uses' => 'TemplatesController@preview',

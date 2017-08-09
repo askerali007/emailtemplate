@@ -64,14 +64,10 @@
                         <div class="box-footer "> 
                             
                             <div class="col-md-4 center">
-                          	<a href="{{URL::asset('/templates/create')}}" class="templ-action rborder" data-toggle="tooltip" data-placement="top" data-original-title="Create new draft"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>   
-                            @if(1==1)
+                          	<a href="{{URL::asset('/templates/draft')}}" class="templ-action rborder" data-toggle="tooltip" data-placement="top" data-original-title="Draft templates"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>(2)</a>
+                            </div> 
                             <div class="col-md-4 center">
-                          	<a href="{{URL::asset('/templates/create')}}" class="templ-action rborder" data-toggle="tooltip" data-placement="top" data-original-title="Edit last drafted template" ><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                            @else
-                                <a href="javascript:" class="templ-action rborder" data-toggle="tooltip" data-placement="top" data-original-title="There is no drafted template" ><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
-                            @endif
+                          	<a href="{{URL::asset('/templates/finalized')}}" class="templ-action rborder" data-toggle="tooltip" data-placement="top" data-original-title="Finalized templates" ><i class="fa fa-file-text" aria-hidden="true"></i>(3)</a>
                             </div>
                             <div class="col-md-4 center">
                           	<a href="{{URL::asset('/templates/preview/'.$template->id)}}" class="templ-action" data-toggle="tooltip" data-placement="top" data-original-title="Preview" ><i class="fa fa-eye" aria-hidden="true"></i></a>

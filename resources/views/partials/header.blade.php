@@ -24,7 +24,7 @@
               <a href="{{URL::asset('/templates')}}" class="dropdown-toggle" data-toggle="dropdown">Templates <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{URL::asset('/templates')}}">All Templates</a></li>
-                <li><a href="#">Create new template</a></li>
+                <li><a href="{{URL::asset('/templates/create')}}">Create new template</a></li>
               </ul>
             </li>
           </ul>
@@ -37,7 +37,9 @@
         <!-- /.navbar-collapse -->
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
+        
           <ul class="nav navbar-nav">
+            @if(Auth::user()->role == 'SUPER ADMIN')
             <!-- Messages: style can be found in dropdown.less-->
             <li class="dropdown messages-menu">
               <!-- Menu toggle button -->
@@ -133,6 +135,7 @@
                 </li>
               </ul>
             </li>
+             @endif
             <!-- User Account Menu -->
             <li class="dropdown user user-menu">
               <!-- Menu Toggle Button -->
@@ -164,6 +167,7 @@
               </ul>
             </li>
           </ul>
+        
         </div>
         <!-- /.navbar-custom-menu -->
       </div>

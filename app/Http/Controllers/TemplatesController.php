@@ -8,6 +8,7 @@ use App\Http\Requests;
 
 use App\Templates;
 use App\User;
+use App\Layers;
 
 use Illuminate\Support\Facades\Auth;
 
@@ -36,5 +37,10 @@ class TemplatesController extends Controller
     public function preview($id) {
         $template = Templates::find($id);
         return view('templates.preview', compact('template'));
+    }
+    public function create() {
+        $layers = Layers::all();
+        //echo "<pre>"; print_r($layers); echo "</pre>"; exit;
+        return view('templates.editor', compact('layers'));
     }
 }

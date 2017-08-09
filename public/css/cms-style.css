@@ -9,3 +9,134 @@ and open the template in the editor.
 */
 
 .pd_l{ padding-left: 10px;} .center{ text-align: center;}
+.clearfix{ clear:both; line-height:0; padding:0; margin:0; }
+.pd_tp30{ padding-top:30px;}
+
+//** style for editor ***/
+::selection { background-color: #E13300; color: white; }
+	::-moz-selection { background-color: #E13300; color: white; }
+	code {
+		font-family: Consolas, Monaco, Courier New, Courier, monospace;
+		font-size: 12px;
+		background-color: #f9f9f9;
+		border: 1px solid #D0D0D0;
+		color: #002166;
+		display: block;
+		margin: 14px 0 14px 0;
+		padding: 12px 10px 12px 10px;
+	}
+	.content-wrapper {
+		margin: 0;
+		min-height:450px;
+	}
+	.errorbr{ border:1px solid #F00 !important;}
+	p.footer {
+		text-align: right;
+		font-size: 11px;
+		border-top: 1px solid #D0D0D0;
+		line-height: 32px;
+		padding: 0 10px 0 10px;
+		margin: 20px 0 0 0;
+	}
+	
+	.tool{ border:1px solid #999; max-height:500px; overflow-y:scroll; }
+/*	.tool.col-lg-3{ width:20%;}*/
+	.editor{   background:#f1f1f1;}
+	.editor-area{ margin:10px auto; min-height:400px; background-color:#fff;padding: 80px 0;}
+	.editor-area span.demo{ border:1px dashed #666;padding:100px 40px; display:block;}
+	.layers{ text-align:center; background-color:#f1f1f1; margin:3px;}
+	.layers:hover{border:2px solid #333;}
+	.layers > img{ border:1px solid #CCC; margin:6px auto; width: 100%;} 
+	.active-layer-tools{background: #FFF none repeat scroll 0 0;position: absolute; right: 15px; width: auto; }
+	.active-image-tools{background: #EEE none repeat scroll 0 0;position: absolute; width: auto;}
+	.remove-layer, .edit-layer, .handle{ color:#F00; font-size:22px; display:none;  float:right; margin:3px 10px 8px 8px;} 
+	a.remove-layer{ } 
+	a.edit-layer{  } 
+	a.handle{ } 
+	.image-settings{ color:#F00; font-size:22px; display:none; padding:10px; cursor:pointer; }
+	.editimage.imageChanged.active-image a.image-settings{ display:block;}
+	.remove-layer:hover, .edit-layer:hover, a.handle:hover{ color:#F00;}
+	.container-tool, .image-tool {
+		  position: fixed;
+		  height:100%;
+		  background-color: white;
+		  z-index: 1030;
+		  border: 1px solid #000;margin: 0;	padding: 10px 0;	right: 0;top: 0;width: 300px;}
+	.padding-area{ padding:0 12px;}
+    .container-tool label, .image-tool label { display:block; font-weight:bold; color:#4A5FEC;}
+	.small-text{ width:50px; border:1px solid #CCC;}
+	.black_overlay {
+		  display: none;
+		  position: fixed;
+		  top: 0%;
+		  left: 0%;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #333;
+		  z-index: 1001;
+		  -moz-opacity: 0.8;
+		  opacity: .80;
+		  filter: alpha(opacity=80);
+	}
+	a.close-popup, a.close-popup2{
+		background-color: #000;
+		border: 1px solid #fff;
+		color: #fff;
+		font-size: 22px;
+		padding: 2px;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	a.close-img-upload {
+		background-color: #000;
+		border: 1px solid #fff;
+		color: #fff;
+		font-size: 22px;
+		padding: 2px;
+		position: absolute;
+		right: -23px;
+		top: 0;
+	}
+	.active-layer{
+		border:1px dashed #999;
+	}
+	.inl-bl {display: inline-block;}
+	
+	.upload-image{ max-width:100%; max-height:500px !important;}
+	.image-crop.modal-dialog {
+	  width: 95%;
+	  height:600px !important;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.image-crop.modal-dialog > .modal-content {
+	  height: auto;
+	  min-height: 100%;
+	  border-radius: 0;
+	  
+	}
+	.docs-cropped .modal-body > img, .docs-cropped .modal-body > canvas {
+		max-width: 100%;
+	}
+	.image-crop.modal-dialog > .modal-content > .modal-footer { background:red; }
+	.preview-thumb{ height:200px; width:100%;}
+	.preview-lg {
+		width: 100%;
+		height: 200px;
+	}
+	.img-preview {
+		float: left;
+		margin-right: .5rem;
+		margin-bottom: .5rem;
+		overflow: hidden;
+	}
+	.full-width{ width:100%;}
+	.docs-data > .input-group {
+		margin-bottom: .5rem;
+	}
+	.pd_8{ padding:8px;}
+	.pd_bt_10{ padding-bottom:10px;}
+	.dataVal{ border:none; width:30px;}
+	#templateCategory .modal-dialog{ width:400px;}
