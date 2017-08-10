@@ -97,7 +97,7 @@ class TemplatesController extends Controller
         
         if(@file_put_contents('temp/'.$filename.'.'.$ext, $data)){
             //$res = $this->do_resize($filename.'.'.$ext,$width,$height);
-            $image_url = URL::asset("temp/images/".$filename.".".$ext);
+            $image_url = asset("temp/images/".$filename.".".$ext);
 
         }
 
