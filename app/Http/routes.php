@@ -49,6 +49,20 @@ Route::get('/templates/create', [
         'as' => 'templates.create',
 	'uses' => 'TemplatesController@create',
 ]);
+Route::post('/templates/createhtml', [
+        'as' => 'templates.createhtml',
+	'uses' => 'TemplatesController@createhtml',
+]);
+Route::post('/templates/cropimage', [
+        'as' => 'templates.cropimage',
+	'uses' => 'TemplatesController@cropimage',
+]);
+
+Route::get('/templates/draft/{id}', [
+        'as' => 'templates.draft',
+	'uses' => 'TemplatesController@draft',
+]);
+
 Route::get('/templates/preview/{id}', [
         'as' => 'templates.preview',
 	'uses' => 'TemplatesController@preview',

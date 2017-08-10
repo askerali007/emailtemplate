@@ -3,19 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/resources/views/partials/header.blade.php</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/resources/views/templates/draft.blade.php</file>
             <file>file:/F:/Xampp/htdocs/projects/myfirstapp/app/Http/Controllers/TemplatesController.php</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/css/editor-style.css</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/resources/views/layouts/editor.blade.php</file>
             <file>file:/F:/Xampp/htdocs/projects/myfirstapp/resources/views/templates/index.blade.php</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/app/Http/routes.php</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/app/Http/Controllers/UsersController.php</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/uploads/layers/layer_1.html</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/uploads/layers/layer_3.html</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/css/cms-style.css</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/app/Layers.php</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/resources/views/layouts/master.blade.php</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/uploads/templates/2/index.php</file>
-            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/uploads/layers/layer_4.html</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/js/editor-app.js</file>
             <file>file:/F:/Xampp/htdocs/projects/myfirstapp/resources/views/templates/editor.blade.php</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/app/Http/routes.php</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/config/app.php</file>
+            <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/css/cms-style.css</file>
             <file>file:/F:/Xampp/htdocs/projects/myfirstapp/public/js/cms-app.js</file>
         </group>
     </open-files>

@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.editor')
 
 @section('content')
 <section class="content">
@@ -37,7 +37,7 @@
                     <div class="layers">There are no layers.</div>
                     @endforelse
                 </div>
-                <div class="col-lg-10 col-xs-12 ">
+                <div class="col-lg-10 col-xs-12 paper">
                     <div class="container-tool hide">
                         <a href="javascript:" class="close-popup" ><i class="fa fa-times" aria-hidden="true"></i></a>
                         <div class="padding-area">
