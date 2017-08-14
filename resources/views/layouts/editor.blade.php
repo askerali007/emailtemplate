@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="{{{ URL::asset('css/cms-style.css')}}}">
   <!-- jQuery 2.2.0 -->
   <script src="{{{ URL::asset('plugins/jQuery/jQuery-2.2.0.min.js')}}}"></script>
-<!--  <script src="{{{ URL::asset('plugins/jQuery/jquery-migrate-1.4.0.js')}}}"></script>-->
+  <script src="{{{ URL::asset('plugins/jQuery/jquery-migrate-1.4.0.js')}}}"></script>
   <script src="{{{ URL::asset('plugins/jQueryUI/jquery-ui.min.js')}}}"></script>
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->

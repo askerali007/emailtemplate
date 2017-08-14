@@ -43,6 +43,10 @@ class TemplatesController extends Controller
         //echo "<pre>"; print_r($layers); echo "</pre>"; exit;
         return view('templates.editor', compact('layers'));
     }
+    public function save(Request $request) {
+        $content = $request->input('value');
+        print_r($content);
+    }
     public function createhtml(Request $request) {
         $folder = "temp";
         if(!file_exists($folder)){
@@ -96,7 +100,7 @@ class TemplatesController extends Controller
             }
         
         if(@file_put_contents('temp/'.$filename.'.'.$ext, $data)){
-            //$res = $this->do_resize($filename.'.'.$ext,$width,$height);
+            $res = $this->do_resize($filename.'.'.$ext,$width,$height);
             $image_url = asset("temp/images/".$filename.".".$ext);
 
         }
@@ -118,10 +122,12 @@ class TemplatesController extends Controller
 
         $source_path = 'temp/' . $filename;
         $target_path = 'temp/images/'.$filename;
-
-        $image_resize = Image::make($image->getRealPath());              
-        $image_resize->resize(300, 300);
-        $image_resize->save(public_path('images/ServiceImages/' .$filename));
+        //return public_path($source_path);
+        $image = Image::make(public_path($source_path));
+        $image_path   = public_path($source_path);       
+        $image_resize = Image::make($image_path);              
+        $image_resize->resize($width, $height);
+        $image_resize->save(public_path($target_path));
 	
     }
 }

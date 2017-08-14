@@ -57,6 +57,10 @@ Route::post('/templates/cropimage', [
         'as' => 'templates.cropimage',
 	'uses' => 'TemplatesController@cropimage',
 ]);
+Route::post('/templates/save', [
+        'as' => 'templates.save',
+	'uses' => 'TemplatesController@save',
+]);
 
 Route::get('/templates/draft/{id}', [
         'as' => 'templates.draft',

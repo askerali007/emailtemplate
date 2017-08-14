@@ -229,12 +229,14 @@
 			  _changeImageURL();
 			  
 			  //Editor Initialization
-			  $('.editable').editable(opts.baseUrl+"editor/save", { 
+                          var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+			  $('.editable').editable(opts.baseUrl+"templates/save", { 
 					type      : 'wysiwyg',
 					event     : 'dblclick',
-					data      : function (value, settings) {
-						 return $.trim(value);
-					}, 
+                                        submitdata:{_token: CSRF_TOKEN},
+					data      :  function (value, settings) {
+                                                            return $.trim(value);
+                                                    }, 
 					onblur    : 'ignore',
 					tooltip	  : 'Double click for edit the content.',
 					submit    : 'OK',
@@ -245,7 +247,7 @@
 								}
 					}*/
 				});
-			  $('.editableTitle').editable(opts.baseUrl+"editor/save", { 
+			  $('.editableTitle').editable(opts.baseUrl+"templates/save", { 
 					type      : 'wysiwyg',
 					event     : 'dblclick',
 					data      : function (value, settings) {
