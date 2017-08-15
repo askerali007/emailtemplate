@@ -61,6 +61,10 @@ Route::post('/templates/save', [
         'as' => 'templates.save',
 	'uses' => 'TemplatesController@save',
 ]);
+Route::post('/templates/savetemplate', [
+        'as' => 'templates.savetemplate',
+	'uses' => 'TemplatesController@savetemplate',
+]);
 
 Route::get('/templates/draft/{id}', [
         'as' => 'templates.draft',

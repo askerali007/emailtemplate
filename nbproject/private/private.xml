@@ -5,8 +5,9 @@
         <group>
             <file>file:/C:/xampp/htdocs/projects/laravel/myfirstapp/app/Http/routes.php</file>
             <file>file:/C:/xampp/htdocs/projects/laravel/myfirstapp/app/Http/Controllers/TemplatesController.php</file>
-            <file>file:/C:/xampp/htdocs/projects/laravel/myfirstapp/public/js/jquery.jeditable.js</file>
+            <file>file:/C:/xampp/htdocs/projects/laravel/myfirstapp/resources/views/templates/editor.blade.php</file>
             <file>file:/C:/xampp/htdocs/projects/laravel/myfirstapp/public/js/editor-app.js</file>
+            <file>file:/C:/xampp/htdocs/projects/laravel/myfirstapp/app/Templates.php</file>
         </group>
     </open-files>
 </project-private>

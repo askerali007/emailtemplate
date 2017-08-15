@@ -35,15 +35,15 @@ and open the template in the editor.
 		margin: 20px 0 0 0;
 	}
 	
-	.tool{ border:1px solid #999; max-height:490px; overflow-y:scroll; position: fixed; bottom: 1px; }
+	.tool{ background: #FFF; border:1px solid #999; max-height:462px; overflow-y:scroll; position: fixed; bottom: 31px; }
         .paper{ float: right;}
+        .border{ border: 1px solid #D0D0D0;}
 /*	.tool.col-lg-3{ width:20%;}*/
-	.editor{   background:#f1f1f1;}
-	.editor-area{ margin:10px auto; min-height:400px; background-color:#fff;padding: 80px 0;}
+	.editor-area{ margin:10px auto; min-height:442px; background-color:#fff;padding: 80px 0;}
 	.editor-area span.demo{ border:1px dashed #666;padding:100px 40px; display:block;}
-	.layers{ text-align:center; background-color:#f1f1f1; margin:3px;}
+	.layers{ text-align:center; margin:12px 3px;}
 	.layers:hover{border:2px solid #333;}
-	.layers > img{ border:1px solid #CCC; margin:6px auto; width: 100%;} 
+	.layers > img{ border:1px solid #CCC; margin:0px auto; width: 100%;} 
 	.active-layer-tools{background: #FFF none repeat scroll 0 0;position: absolute; right: 15px; width: auto; }
 	.active-image-tools{background: #EEE none repeat scroll 0 0;position: absolute; width: auto;}
 	.remove-layer, .edit-layer, .handle{ color:#F00; font-size:22px; display:none;  float:right; margin:3px 10px 8px 8px;} 

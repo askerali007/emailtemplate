@@ -8,8 +8,15 @@
             <div class="col-xs-12">
               
             <div class="box-header">
-              <h1 class="box-title">Layout:</h1>
-              <a href="javascript:" class="btn btn-primary preview pull-right" role="button" id="preview_template"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;Preview</a>
+                <div class="col-lg-10 col-xs-10">
+                    <h1 class="box-title">Layout:</h1>  
+                </div>
+              <div class="col-lg-1">
+                <a href="javascript:" class="btn btn-warning " data-toggle="modal" data-target="#templateModel" role="button" id="save_template"><i class="fa fa-save" aria-hidden="true"></i>&nbsp;Save</a>
+              </div>
+              <div class="col-lg-1">
+                  <a href="javascript:" class="btn btn-primary preview pull-right" role="button" id="preview_template"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp;Preview</a>
+              </div>
             </div>
               
               <div class="col-xs-12">
@@ -38,7 +45,8 @@
                     @endforelse
                 </div>
                 <div class="col-lg-10 col-xs-12 paper">
-                    <div class="container-tool hide">
+                    <div class="col-lg-12 col-xs-12 border">
+                        <div class="container-tool hide">
                         <a href="javascript:" class="close-popup" ><i class="fa fa-times" aria-hidden="true"></i></a>
                         <div class="padding-area">
                                 <ul id="content_tabs" class="nav nav-pills" data-tabs="tabs">
@@ -118,7 +126,7 @@
                                
                         </div>
                     </div>
-                    <div class="image-tool hide">
+                        <div class="image-tool hide">
                         <a href="javascript:" class="close-popup2" ><i class="fa fa-times" aria-hidden="true"></i></a>
                         <div class="padding-area">
                                 <ul id="image_tabs" class="nav nav-pills" data-tabs="tabs">                                    
@@ -198,10 +206,10 @@
                                
                         </div>
                     </div>
-                    <div id="editor_area" class="editor-area">
+                        <div id="editor_area" class="editor-area">
                     	<span class="demo">Add content by clicking side widgets.</span>
                     </div>
-                   
+                    </div>
                 </div>
                  <div class="clearfix"></div>
             </div>
@@ -361,6 +369,54 @@
             </div>
           </div>
         </div>
+    
+    <div id="templateModel" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">              
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                <div class="col-lg-8 col-xs-12">
+                    <div class="form-group">
+                        <label for="template_name">Template Name:</label>
+                        <input type="text" class="form-control" id="template_name" name="template_name">
+                      </div>
+                    <div class="form-group">
+                      <label for="template_category">Category:</label>
+                      <select name="template_category" id="template_category" class="form-control">
+                          <option value="1">Uncategorized</option>
+                          <option value="2">SPA</option>
+                          <option value="3">Rooms</option>
+                          <option value="4">F&B</option>
+                      </select>
+                    </div>
+                    @if(Auth::user()->role == 'SUPER ADMIN')
+                    <div class="form-group">
+                      <label for="template_user">Assign User:</label>
+                      <select name="template_user" id="template_user" class="form-control">
+                          <option value="1">Asker</option>
+                          <option value="2">Aneesh</option>
+                          <option value="3">Sneha</option>
+                          <option value="4">tanveer</option>
+                      </select>
+                    </div>
+                    @endif
+                </div>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="save_template" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
 </section>
 <script>
 $(document).ready(function(e) {

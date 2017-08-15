@@ -137,7 +137,8 @@
                                             type:"POST",
                                             dataType:"json"
 					}).fail(function(error){
-						alert(error);
+                                            alert("Error: something wrong happened !!!")
+                                            window.location.reload();
 					}).done(function(data){
                                             if(data.status == 'success'){
                                                 if ($currentImage) {
@@ -456,15 +457,41 @@
 			});
 			
         });
+        
+                //Save Template
+                $('#save_template').click(function(e) {
+                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                    var content = $('#editor_area').html();
+			$.ajax({
+			  type: "POST",
+			  url: opts.baseUrl+'templates/savetemplate',
+			  data: {'content':content,_token: CSRF_TOKEN},
+                          dataType: 'JSON',
+			  success: function(data){
+                              console.log(data);
+                                if(data.status == 'success'){
+                                        window.open(
+                                          opts.baseUrl+"uploads/draft/"+data+"/index.html",
+                                          '_blank' // <- This is what makes it open in a new window.
+                                        );
+
+                                }
+                                else{
+                                        alert("Preview not available!, Please try later.");	
+                                }
+                         }
+			});
+			
+                });
 	
        $(window).scroll(function() {
-           if($(window).scrollTop() > 100){
-               $('.tool').css('top','10px');
+           if($(window).scrollTop() > 50){
+               $('.tool').css('top','8px');
                $('.tool').css('max-height','565px');
            
            }
            else{
-              $('.tool').css('top','140px'); 
+              $('.tool').css('top','135px'); 
             }
         });
 		
